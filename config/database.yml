@@ -19,7 +19,3 @@ development:
 test:
   <<: *default
   database: freelancer_test
-
-production:
-  <<: *default
-  database: freelancer_production
