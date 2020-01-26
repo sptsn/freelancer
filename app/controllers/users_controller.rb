@@ -6,9 +6,9 @@ class UsersController < ApplicationController
 
     case result
     when Dry::Monads::Success
-      redirect_back fallback_location: '/'
+      render body: nil, status: 200
     else
-      render 'pages/index', status: 422
+      render body: nil, status: 422
     end
   end
 end
